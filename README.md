@@ -99,7 +99,7 @@ soup = BeautifulSoup(page.content, 'html.parser')
 
 To figure out how the elements are structured in HTML, you use the **Inspect Element** tool. Open the [web page](https://books.toscrape.com/) in the browser and press **Ctrl + Shift + I** to open the **Inspector**. As you can see in the screenshot, the products are stored in `li` elements with class `col-xs-6 col-sm-4 col-md-3 col-lg-3`. The book title can be found from `a` elements by reading their `title` attribute, and the prices are stored in `p` elements with class `price_color`:
 
-![prices are stored in p elements with class price_color](https://media.brightdata.com/2024/05/prices-are-stored-in-p-elements-with-class-price_color.png)
+![prices are stored in p elements with class price_color](https://github.com/luminati-io/web-scraping-with-regex/blob/main/images/prices-are-stored-in-p-elements-with-class-price_color.png)
 
 Use the `find_all` method of Beautiful Soup to find all `li` elements with class `col-xs-6 col-sm-4 col-md-3 col-lg-3`:
 
@@ -271,7 +271,7 @@ While regular expressions are powerful for pattern matching and data extraction,
 
 For instance, in the Wikipedia example, some links weren't correctly extracted:
 
-![Links that weren't exctracted correctly](https://media.brightdata.com/2024/05/Links-that-werent-exctracted-correctly.png)
+![Links that weren't exctracted correctly](https://github.com/luminati-io/web-scraping-with-regex/blob/main/images/Links-that-werent-exctracted-correctly.png)
 
 If you edit the Python code and add `print(content)` to print the HTML string returned by Beautiful Soup, you see the culprit `a` looks like this:
 
