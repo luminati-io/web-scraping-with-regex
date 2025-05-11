@@ -56,6 +56,12 @@ Activate it:
 source ./venv/bin/activate
 ```
 
+And on Windows:
+
+```
+venv\Scripts\activate
+```
+
 For this web scraper, you'll need two libraries:
 
 - `requests` for fetching web pages
